@@ -1,0 +1,168 @@
+/* styles/Translator.module.css */
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    color: #333;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    height: 60px;
+}
+
+.title {
+    font-size: 32px;
+    font-weight: bold;
+    color: #000;
+}
+
+.languageSelection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+
+.languageSelection label {
+    font-weight: bold;
+}
+
+.languageSelection select {
+    margin-left: 10px;
+    padding: 5px 10px;
+    font-size: 16px;
+}
+
+.swapButton {
+    background-color: #fff;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+}
+
+.swapButton:hover {
+    background-color: #f0f0f0;
+}
+
+.swapButton:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+.textAreas {
+    display: flex;
+    justify-content: space-between;
+}
+
+.textArea {
+    width: 48%;
+    height: 500px;
+    padding: 20px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    resize: none;
+    position: relative;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+}
+
+.outputArea {
+    overflow-y: auto;
+    background-color: #fff;
+}
+
+.outputHeader {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.copyButton {
+    background-color: #007aff;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    font-size: 16px;
+    border-radius: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.copyButton:hover {
+    background-color: #005bb5;
+}
+
+.outputContent {
+    flex: 1;
+    overflow-y: auto;
+    padding-top: 10px;
+}
+
+.cursor {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background-color: #000;
+    border-radius: 50%;
+    margin-left: 5px;
+    animation: blink 1s steps(1) infinite;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.buttonContainer {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.button {
+    padding: 15px 40px;
+    font-size: 20px;
+    background-color: #007aff;
+    color: #fff;
+    border: none;
+    border-radius: 24px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button:disabled {
+    background-color: #a9a9a9;
+    cursor: not-allowed;
+}
+
+.button:hover:not(:disabled) {
+    background-color: #005bb5;
+}
+/* styles/Translator.module.css */
+
+.cursor {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background-color: #000;
+    border-radius: 50%;
+    margin-left: 5px;
+    animation: blink 1s steps(1) infinite;
+    vertical-align: middle;
+}
