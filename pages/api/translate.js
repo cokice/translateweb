@@ -33,7 +33,7 @@ export default async function handler(req, res) {
 
     try {
         const completion = await openai.chat.completions.create({
-            model: 'gpt-4o',
+            model: 'chatgpt-4o-latest',
             messages: messages,
             stream: true,
         });
